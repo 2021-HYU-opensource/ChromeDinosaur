@@ -141,7 +141,7 @@ class Difficult:
             diff_dis2_textRect = diff_dis2_text.get_rect()
             diff_dis2_textRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 30)
             SCREEN.blit(diff_dis2_text, diff_dis2_textRect)
-            diff_end_text = diff_dis_font.render("If you wand to Exit, press e", True, (0, 0, 0))
+            diff_end_text = diff_dis_font.render("Exit : press E", True, (0, 0, 0))
             diff_end_textRect = diff_end_text.get_rect()
             diff_end_textRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 100)
             SCREEN.blit(diff_end_text, diff_end_textRect)
@@ -221,7 +221,7 @@ class Theme:
             diff_dis1_textRect = diff_dis1_text.get_rect()
             diff_dis1_textRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 30)
             SCREEN.blit(diff_dis1_text, diff_dis1_textRect)
-            diff_dis2_text = diff_dis_font.render("???: press 3  ??: press 4", True, (0, 0, 0))
+            diff_dis2_text = diff_dis_font.render("Theme3: press 3  Theme4: press 4", True, (0, 0, 0))
             diff_dis2_textRect = diff_dis2_text.get_rect()
             diff_dis2_textRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 30)
             SCREEN.blit(diff_dis2_text, diff_dis2_textRect)
@@ -266,7 +266,27 @@ class Theme:
                 diff_textRect = diff_text.get_rect()
                 diff_textRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 200)
                 SCREEN.blit(diff_text, diff_textRect)
-                SCREEN_BG = (178, 204, 255) # TEST
+
+                SCREEN_BG = (158, 123, 255)
+                RUNNING = [pygame.image.load(os.path.join("Assets/Dino", "DinoRun1.png")),
+                           pygame.image.load(os.path.join("Assets/Dino", "DinoRun2.png"))]
+                JUMPING = pygame.image.load(os.path.join("Assets/Dino", "DinoJump.png"))
+                DUCKING = [pygame.image.load(os.path.join("Assets/Dino", "DinoDuck1.png")),
+                           pygame.image.load(os.path.join("Assets/Dino", "DinoDuck2.png"))]
+
+                SMALL_CACTUS = [pygame.image.load(os.path.join("Assets/Cactus", "SmallCactus1.png")),
+                                pygame.image.load(os.path.join("Assets/Cactus", "SmallCactus2.png")),
+                                pygame.image.load(os.path.join("Assets/Cactus", "SmallCactus3.png"))]
+                LARGE_CACTUS = [pygame.image.load(os.path.join("Assets/Cactus", "LargeCactus1.png")),
+                                pygame.image.load(os.path.join("Assets/Cactus", "LargeCactus2.png")),
+                                pygame.image.load(os.path.join("Assets/Cactus", "LargeCactus3.png"))]
+
+                BIRD = [pygame.image.load(os.path.join("Assets/Bird", "Bird1.png")),
+                        pygame.image.load(os.path.join("Assets/Bird", "Bird2.png"))]
+
+                CLOUD = pygame.image.load(os.path.join("Assets/Other", "Cloud.png"))
+
+                BG = pygame.image.load(os.path.join("Assets/Other", "Track.png"))
 
             if (themeStatus == 3):
                 diff_font = pygame.font.Font('freesansbold.ttf', 20)
@@ -283,7 +303,6 @@ class Theme:
                 diff_textRect = diff_text.get_rect()
                 diff_textRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 200)
                 SCREEN.blit(diff_text, diff_textRect)
-
 
             pygame.display.update()
             for event in pygame.event.get():
