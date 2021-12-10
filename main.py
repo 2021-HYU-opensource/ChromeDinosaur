@@ -40,9 +40,9 @@ CLOUD = pygame.image.load(os.path.join("Assets/Other", "Cloud.png"))
 
 BG = pygame.image.load(os.path.join("Assets/Other", "Track.png"))
 themeStatus = 1
-JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "jump.mp3"))
-SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "speedup.mp3"))
-BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "Main_BGM.mp3"))
+JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "jump.wav"))
+SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "speedup.wav"))
+BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "Main_BGM.wav"))
 
 SCORE = []
 
@@ -454,9 +454,9 @@ class Option:
 
                 BG = pygame.image.load(os.path.join("Assets/Other", "Track.png"))
 
-                JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "jump.mp3"))
-                SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "speedup.mp3"))
-                BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "Main_BGM.mp3"))
+                JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "jump.wav"))
+                SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "speedup.wav"))
+                BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "Main_BGM.wav"))
 
                 Dinosaur.Y_POS_DUCK = 340
                 FONT_COLOR = (0, 0, 0)
@@ -491,9 +491,9 @@ class Option:
                 CLOUD = pygame.image.load(os.path.join("Assets/Mario_Theme/M_Other", "M_Cloud.png"))
                 BG = pygame.image.load(os.path.join("Assets/Mario_Theme/M_Other", "M_Track.png"))
 
-                JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Mario_Theme/Soundtrack", "M_Jump.mp3"))
-                SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Mario_Theme/Soundtrack", "Coin.mp3"))
-                BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Mario_Theme/Soundtrack", "M_BGM.mp3"))
+                JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Mario_Theme/Soundtrack", "M_Jump.wav"))
+                SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Mario_Theme/Soundtrack", "Coin.wav"))
+                BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Mario_Theme/Soundtrack", "M_BGM.wav"))
                 Dinosaur.Y_POS_DUCK = 320
                 FONT_COLOR = (0, 0, 0)
                 Menu_selected = font.render(chr(64), True, (0, 0, 0))
@@ -530,9 +530,9 @@ class Option:
 
                 BG = pygame.image.load(os.path.join("Assets/photoes/ground", "Track.png"))
 
-                JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "jump.mp3"))
-                SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "speedup.mp3"))
-                BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "Main_BGM.mp3"))
+                JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "jump.wav"))
+                SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "speedup.wav"))
+                BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "Main_BGM.wav"))
 
                 Dinosaur.Y_POS_DUCK = 320
                 FONT_COLOR = (255, 255, 255)
@@ -570,9 +570,9 @@ class Option:
 
                 BG = pygame.image.load(os.path.join("Assets/Night/Other", "Track.png"))
 
-                JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "jump.mp3"))
-                SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "speedup.mp3"))
-                BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "Main_BGM.mp3"))
+                JUMP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "jump.wav"))
+                SPEEDUP_SOUND = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "speedup.wav"))
+                BG_MUSIC = pygame.mixer.Sound(os.path.join("Assets/Soundtrack", "Main_BGM.wav"))
                 Dinosaur.Y_POS_DUCK = 340
                 FONT_COLOR = (255, 255, 255)
                 Menu_selected = font.render(chr(64), True, (0, 0, 0))
